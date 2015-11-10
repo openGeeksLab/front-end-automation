@@ -1,0 +1,30 @@
+.FE-move {
+  display: flex;
+  justify-content: center;
+  min-height: $size-minSize * 80;
+  background: url('../img/move.jpg');
+}
+
+.FE-moveTitle {
+  font-family: "Oswald", sans-serif;
+  font-size: $size-minSize * 8;
+  font-weight: bold;
+  align-self: center;
+  color: $color-white;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  @include respond-to('exNarrow'){
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: inline-block;
+
+    @include respond-to('exNarrow'){
+      display: block;
+    }
+
+  }
+}

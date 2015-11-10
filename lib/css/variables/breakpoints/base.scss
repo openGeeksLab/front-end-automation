@@ -1,0 +1,19 @@
+// Viewport widths for breakpoints
+$breakpoint-Narrow: 480px;
+$breakpoint-Medium: 720px;
+$breakpoint-Wide: 990px;
+$breakpoint-ExWide: 1256px;
+
+// Standard breakpoints names
+$breakpoint-name-exNarrow: 'exNarrow';
+$breakpoint-name-narrow: 'Narrow';
+$breakpoint-name-medium: 'Medium';
+$breakpoint-name-wide: 'Wide';
+$breakpoint-name-exWide: 'exWide';
+
+// Standard breakpoints respond-to queries
+$breakpoints: add-breakpoint($breakpoint-name-exNarrow, (max-width ($breakpoint-Narrow - 1)));
+$breakpoints: add-breakpoint($breakpoint-name-narrow, ($breakpoint-Narrow ($breakpoint-Medium - 1)));
+$breakpoints: add-breakpoint($breakpoint-name-medium, ($breakpoint-Medium ($breakpoint-Wide - 1)));
+$breakpoints: add-breakpoint($breakpoint-name-wide, ($breakpoint-Wide ($breakpoint-ExWide - 1)));
+$breakpoints: add-breakpoint($breakpoint-name-exWide, (min-width $breakpoint-ExWide));

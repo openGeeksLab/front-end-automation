@@ -1,0 +1,45 @@
+.FE-btn {
+  display: block;
+  margin: 0 auto;
+  padding: $size-minSize $size-minSize * 3;
+  width: $size-minSize * 16;
+  height: $size-minSize * 5;
+  font-family: "Oswald", sans-serif;
+  font-size: $size-minSize * 2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &_black {
+    color: $color-white;
+    background: $color-graphite;
+    transition: .3s background;
+
+    &:hover {
+      background: $color-medium-gray;
+    }
+
+    &:active {
+      color: $color-medium-gray;
+      cursor: default;
+      background: $color-white;
+    }
+  }
+
+  &_white{
+    color: $color-graphite;
+    background: $color-white;
+    transition: .3s background;
+
+    &:hover {
+      color: $color-white;
+      background: $color-lime-green;
+    }
+
+    &:active {
+      color: $color-medium-gray;
+      cursor: default;
+      background: $color-white;
+    }
+  }
+}

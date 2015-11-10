@@ -1,0 +1,36 @@
+{
+    "default": "development",
+    "development": [
+        "concurrent:develop"
+    ],
+    "build": [
+        "clean:public",
+        "compass:build",
+        "autoprefixer:build",
+        "copy:css",
+        "cssmin:build",
+        "copy:index",
+        "copy:html",
+        "copy:img",
+        "copy:ico",
+        "jscs:build",
+        "jshint:build",
+        "uglify:build",
+        "clean:sass",
+        "clean:tmp",
+        "karma:unit",
+        "coverage",
+        "karma:coverage",
+        "copy:report"
+    ],
+    "test": [ "karma:unit" ],
+    "test_watch": [ "karma:watch" ],
+    "test_debug": [ "karma:debug" ],
+    "test_coverage": [ "karma:coverage" ],
+    "hook": [
+        "jscs:changed",
+        "jshint:changed",
+        "karma:unit",
+        "coverage"
+    ]
+}

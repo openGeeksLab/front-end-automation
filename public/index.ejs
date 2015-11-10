@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Front-end automation</title>
+</head>
+<body class="FE-layout">
+    <header class="FE-header">
+        <% include ./views/header.ejs %>
+    </header>
+    <main class="FE-content">
+        <% include ./views/partials/start.ejs %>
+        <% include ./views/partials/stack.ejs %>
+        <% include ./views/partials/move.ejs %>
+        <% include ./views/partials/join.ejs %>
+        <% include ./views/partials/stop.ejs %>
+    </main>
+    <footer class="FE-footer">
+        <% include ./views/footer.ejs %>
+    </footer>
+    <script src="./js/vendor.min.js"></script>
+    <script src="./js/app.min.js"></script>
+</body>
+</html>

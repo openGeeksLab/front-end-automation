@@ -1,0 +1,22 @@
+.FE-join {
+  padding: $size-minSize * 6 0;
+  background: $color-graphite;
+
+  &__title {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: $size-minSize * 5;
+    color: $color-lime-green;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0 0 $size-minSize * 3 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $size-minSize * 2;
+    color: white;
+    text-align: center;
+  }
+}

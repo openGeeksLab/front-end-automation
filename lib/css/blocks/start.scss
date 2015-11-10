@@ -1,0 +1,22 @@
+.FE-start {
+  min-height: $size-minSize * 80;
+  background: url("../img/start.jpg");
+
+  &__title {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: $size-minSize * 20;
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0 0 $size-minSize * 3 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $size-minSize * 2;
+    color: white;
+    text-align: center;
+  }
+}

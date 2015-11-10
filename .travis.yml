@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 4.2.2
+script:
+  - npm start
+deploy:
+  provider: heroku
+  api_key:
+    secure: QmxysedyjS9VkL659BFAgUQLhhpq/wa8nD/CgvSia5kSwd2aKXxhygOVNFN8waTJf7XUQihmIVjLpmqlZbq7GJvx6KywHS+z1wkntyqRg97JmHTDfy1QI5ukZd5zeMVK1uTvzfYH5VkEFSkdWGLk6RA1QSuzxsEv1XQaKO4XyZbp7hcLS81ps1CIeeNu6/20BPt7UmvgFNu8MiMF6KwQYx9euNhuRTsj43Euzd7zBbMPF6F+70gdT2aE0ciUIXJWNpPxCuA9iraXbGjzJgAsXgrOk3u0FBl5M2+mD7b5Tk7fupcRHYpt0MVJPd83YY0hg7HY07gVXckmXbeeJZmoHKmPoH6HXpOQCqsrINcm1Sbn5tF00s7WhDJq+U/cjnYd6rD9drAophzQ4TG2usz4ozZLGoIi/CnUbMduk2pYYGU9tz+we/X9Nvj/0+OKjdi59airbP/vc9FPBM9KrLa3FgqTuL45ceIyJK6f3wFbQjvFIjiOltTIgHhSkoQSU2hxlqGu+5ObjJHgXQ3Gqc/BuFJ8YScO/hOiv9YnNt22xrkxo32ICQNzZt5Wa2K1OBiD0yx9jYZIoRk/k8qkDD2yOQXWpl/MMuE2yz1MpmYKw0gME8lu1SNOkWbnNl5T485PakVpyC2CY3wo+B1ljpXI/72IOlBIuSWNvU9+djS34JE=
+  app: front-end-automation
+  on:
+    repo: stremann/front-end-automation

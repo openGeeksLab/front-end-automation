@@ -1,0 +1,112 @@
+{
+    "autoprefixer": {
+        "root": "./public/css/",
+        "pattern": "main.css"
+    },
+
+    "clean": {
+        "tmp": "./.tmp/",
+        "sass": "./.sass-cache/",
+        "public": "./public/*"
+    },
+
+    "compass": {
+        "css": "./public/css/",
+        "scss": "./lib/css/main.scss"
+    },
+
+    "coverage": {
+        "js": {
+            "root": "./tests/"
+        }
+    },
+
+    "cssmin": {
+        "css": "./public/css/",
+        "min": "./public/css/"
+    },
+
+    "copy": {
+        "index": {
+            "src": "./lib/",
+            "dest": "./public/"
+        },
+        "html": {
+            "src": "./lib/views/",
+            "dest": "./public/views/"
+        },
+        "css": {
+            "src": "./vendor/bower/normalize-css/",
+            "dest": "./public/css/"
+        },
+        "img": {
+            "src": "./lib/img/",
+            "dest": "./public/img/"
+        },
+        "ico": {
+            "src": "./lib/img/",
+            "dest": "./public/"
+        },
+        "report": {
+            "src": "./tests/report/",
+            "dest": "./public/views/report/"
+        }
+    },
+
+    "jscs": {
+        "js": "./lib/js/**/*.js",
+        "spec": "./tests/spec/**/*.js",
+        "grunt": "./grunt/**/*.js",
+        "server": "./server.js"
+    },
+
+    "jshint": {
+        "js": "./lib/js/**/*.js",
+        "spec": "./tests/spec/**/*.js",
+        "grunt": "./grunt/**/*.js",
+        "server": "./server.js"
+    },
+
+    "karma": {
+        "js": {
+            "root": "./tests/",
+            "pattern": "./lib/js/**/*.js",
+            "modules": "./lib/js/modules/*.js",
+            "constructor": "./lib/js/Constructor.js",
+            "excludePattern": "./public/js/*.min.js"
+        },
+        "test": {
+            "config": "./tests/spec/config/*.js",
+            "spec": "./tests/spec/**/*.spec.js"
+        },
+        "bower": {
+            "jquery": "./vendor/bower/jquery/dist/jquery.js"
+        },
+        "node_modules": {
+            "jasmine-sinon": "./node_modules/jasmine-sinon/lib/jasmine-sinon.js",
+            "phantomjs-polyfill": "./node_modules/phantomjs-polyfill/bind-polyfill.js"
+        }
+    },
+
+    "uglify": {
+        "app": "./public/js/app.min.js",
+        "vendor": "./public/js/vendor.min.js",
+        "modules": "./lib/js/modules/*.js",
+        "constructor": "./lib/js/Constructor.js",
+        "bower": {
+            "jquery": "./vendor/bower/jquery/dist/jquery.js"
+        }
+    },
+
+    "watch": {
+        "js": {
+            "pattern": "./lib/js/**/*.js"
+        },
+        "css": {
+            "pattern": "./lib/css/**/*.scss"
+        },
+        "html": {
+            "pattern": "./lib/**/*.ejs"
+        }
+    }
+}

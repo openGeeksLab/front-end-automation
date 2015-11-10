@@ -1,0 +1,36 @@
+# Intellij Idea project files
+.idea
+
+# Nodejs installed packages
+node_modules
+# Nodejs log file
+npm-debug.log
+
+# SASS development files: sourcemap, compilation cache directory
+public/**/*.css.map
+
+# Composer files and folders
+vendor
+.sass-cache
+
+# Generated HTML files
+# public/**/*.html
+
+# Generated CSS from SASS files
+#public/css/**/*.css
+
+# Generated JS files
+# public/js/*.min.js
+
+# Generated souce maps files
+# public/js/*.map
+
+# Generated image files
+# public/img/*
+
+# Generated test reports
+tests/report
+tests/coverage
+
+#Sublime SFTP config file
+sftp-config.json

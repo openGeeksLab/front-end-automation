@@ -1,0 +1,22 @@
+{
+  "eqeqeq": true,
+  "globalstrict": true,
+  "asi": false,
+  "indent": 4,
+  "maxerr": 50,
+  "forin": true,
+  "freeze": true,
+  "browser": true,
+  "undef": true,
+  "node": true,
+  "jasmine": true,
+  "jquery": true,
+  "browser": true,
+  "globals": {
+    "sinon": true,
+    "sandbox": true,
+    "mockbox": true,
+    "stubbox": true,
+    "modules": true
+  }
+}

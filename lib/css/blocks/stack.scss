@@ -1,0 +1,27 @@
+.FE-stack {
+  padding: $size-minSize * 6 0;
+  text-align: center;
+  background: $color-graphite;
+}
+
+.FE-stackItem {
+  display: inline-block;
+  margin: $size-minSize;
+  padding: 0 $size-minSize;
+  min-width: 16%;
+  vertical-align: top;
+
+  &__title {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    color: $color-lime-green;
+    font-size: $size-minSize * 5;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: Hevletica, sans-serif;
+    color: $color-white;
+    font-size: $size-minSize * 1.75;
+  }
+}

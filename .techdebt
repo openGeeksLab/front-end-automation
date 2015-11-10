@@ -1,0 +1,2 @@
+1. In grunt uglify task choose different behavior in accordance with env (mangle, compress, source maps)
+2. Improve build speed on travis-ci and heroku env (e.g. caching node_modules and bower_components)
