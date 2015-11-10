@@ -49,6 +49,7 @@ $ node server.js
 - Used CSS postprocessor
 - Used JavaScript task runner
 - Used JavaScript test runner
+- Used Travis to deploy
 
 ### Configuration:
 - Create repository on GitHub and add remote: 
