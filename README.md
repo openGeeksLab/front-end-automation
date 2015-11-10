@@ -47,3 +47,26 @@ $ node server.js
 - Used CSS postprocessor
 - Used JavaScript task runner
 - Used JavaScript test runner
+
+### Configuration:
+- Create repository on GitHub and add remote: 
+```sh
+$ git remote add origin git@github.com:stremann/front-end-automation.git
+```
+- Create repository on heroku: 
+```sh
+$ heroku create front-end-automation
+```
+- Synchronize GitHub repository with [Travis-CI](https://travis-ci.org/profile/stremann)
+- Allow to track `front-end-automation` repository from GitHub on Travis-CI
+- Create encrypted token for heroku: 
+```sh
+$ travis encrypt $(heroku auth:token) --add deploy.api_key
+```
+- Push changes into GitHub repository
+- Open [Travis-CI](https://travis-ci.org/) to see how build goes
+- After success build run:
+```sh
+$ heroku open
+```
+- Enjoy and have fun with your [application](https://front-end-automation.herokuapp.com/)
