@@ -1,5 +1,7 @@
 # Front-End Automation: JavaScript
 
+[![Build Status](https://travis-ci.org/stremann/front-end-automation.svg?branch=master)](https://travis-ci.org/stremann/front-end-automation)
+
 > Constructing JavaScript and Front-End Automation [Home Assignment] (https://kb.epam.com/display/GDOKB/Lecture20%3A+JS+and+Front-End+automation)
 
 ![front-end-automation](preview.png)
